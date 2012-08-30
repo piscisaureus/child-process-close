@@ -1,0 +1,24 @@
+{
+  "name": "child-process-close",
+  "version": "0.1.0",
+  "description": "Make child_process objects emit 'close' events in node v0.6 like they do in v0.8. This makes it easier to write code that works correctly on both version of node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/piscisaureus/child-process-close.git"
+  },
+  "keywords": [
+    "child_process",
+    "spawn",
+    "fork",
+    "exec",
+    "execFile",
+    "close",
+    "exit"
+  ],
+  "author": "Bert Belder",
+  "license": "MIT"
+}
