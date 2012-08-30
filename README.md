@@ -9,9 +9,11 @@ node.
 
 ## Usage
 
-```js
+Just make sure to `require('child-process-close')` anywhere. It will patch the `child_process` module.
 
-var spawm = require('child_process').spawn;
+```js
+require('child-process-close');
+var spawn = require('child_process').spawn;
 
 var cp = spawn('foo');
 cp.on('close', function(exitCode, signal) {
