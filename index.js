@@ -1,9 +1,12 @@
 
+var child_process = require('child_process');
+
+// Re-export the child_process module.
+module.exports = child_process;
+
 // Only node versions up to v0.7.6 need this hook.
 if (!/^v0\.([0-6]\.|7\.[0-6](\D|$))/.test(process.version))
   return;
-
-var child_process = require('child_process');
 
 // Do not add the hook if already hooked.
 if (child_process.hasOwnProperty('_exit_hook'))
