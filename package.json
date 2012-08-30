@@ -1,6 +1,6 @@
 {
   "name": "child-process-close",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make child_process objects emit 'close' events in node v0.6 like they do in v0.8. This makes it easier to write code that works correctly on both version of node.",
   "main": "index.js",
   "scripts": {
